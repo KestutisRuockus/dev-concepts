@@ -1,0 +1,23 @@
+.nav {
+  display: flex;
+  gap: 48px;
+  padding: 16px;
+  margin-left: 48px;
+  border-bottom: 1px solid #1e1e1e;
+}
+
+a {
+  color: var(--color-accent);
+  font-family: var(--font-mono);
+  cursor: pointer;
+  transition: transform 300ms;
+  text-decoration: none;
+}
+
+a:hover {
+  transform: scale(1.2);
+}
+
+.active {
+  color: white;
+}
