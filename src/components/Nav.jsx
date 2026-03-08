@@ -3,8 +3,8 @@ import styles from "./Nav.module.css";
 
 const links = [
   { path: "/", label: "Home" },
-  { path: "/routing", label: "Routing" },
   { path: "/a11y", label: "A11y" },
+  { path: "/routing", label: "Routing" },
   { path: "/lifecycle", label: "Lifecycle" },
 ];
 

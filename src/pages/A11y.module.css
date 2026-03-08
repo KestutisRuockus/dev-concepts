@@ -1,0 +1,196 @@
+section {
+  width: 80%;
+  margin: auto;
+  margin-top: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid gainsboro;
+}
+
+h1 {
+  font-size: xx-large;
+  text-align: center;
+}
+
+h2 {
+  font-size: x-large;
+  text-align: center;
+}
+
+h3 {
+  font-size: large;
+  text-align: center;
+  margin: 24px 0;
+}
+
+.intro,
+.semanticTagNames,
+.keyboardAccessibility,
+.keyboardNavigation,
+.focusManagement {
+  width: 40%;
+  margin: auto;
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  list-style: none;
+}
+
+.semanticTagNames {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  list-style: none;
+}
+
+.semanticTagNames li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+code {
+  color: rgb(79, 205, 247);
+  font-size: 14px;
+}
+
+.greyBackground {
+  background-color: rgb(29, 29, 29);
+  padding: 8px;
+  width: fit-content;
+  margin-top: 4px;
+  border-radius: 6px;
+}
+
+.semanticOverNonSemantics,
+.aria,
+.importantRule {
+  width: 70%;
+  margin: auto;
+  margin-top: 24px;
+}
+
+.semanticReasons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 16px;
+  list-style: none;
+}
+
+.semanticExamples {
+  width: fit-content;
+  display: flex;
+  gap: 96px;
+  margin: auto;
+  margin-top: 24px;
+}
+
+.semanticExamples div {
+  background-color: rgb(29, 29, 29);
+  padding: 16px;
+  border-radius: 6px;
+}
+
+.semanticExamples div:first-child,
+.keyboardNavigationExample div:first-child {
+  border: 1px solid red;
+}
+
+.semanticExamples div:last-child,
+.keyboardNavigationExample div:last-child {
+  border: 1px solid green;
+}
+
+.importantRule {
+  padding: 12px 36px;
+  border-radius: 6px;
+  width: fit-content;
+  background-color: rgb(29, 29, 29);
+  border-left: 8px solid rgb(47, 222, 24);
+}
+
+.ariaAttrs {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: fit-content;
+  margin: auto;
+  margin-top: 24px;
+  list-style: none;
+}
+
+.keyboardNavigationExample {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.focusManagementExample {
+  margin: auto;
+  margin-top: 24px;
+}
+
+@media (max-width: 1280px) {
+  .intro,
+  .semanticTagNames,
+  .keyboardAccessibility,
+  .keyboardNavigation,
+  .focusManagement {
+    width: 60%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .intro,
+  .semanticTagNames,
+  .keyboardAccessibility,
+  .keyboardNavigation,
+  .focusManagement {
+    width: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    width: 90%;
+  }
+
+  .intro,
+  .semanticTagNames,
+  .keyboardAccessibility,
+  .keyboardNavigation,
+  .focusManagement {
+    width: 80%;
+  }
+}
+
+@media (max-width: 640px) {
+  .intro,
+  .semanticTagNames,
+  .semanticOverNonSemantics,
+  .aria,
+  .importantRule,
+  .keyboardAccessibility,
+  .keyboardNavigation,
+  .focusManagement {
+    width: 100%;
+  }
+
+  .semanticExamples {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .importantRule {
+    padding: 12px;
+  }
+
+  .keyboardNavigationExample {
+    flex-direction: column;
+  }
+}
