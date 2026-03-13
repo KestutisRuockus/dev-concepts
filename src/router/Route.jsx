@@ -1,12 +1,12 @@
-import React from "react";
 import { useRouter } from "./RouterContext";
 
-const Route = ({ path, component: Component }) => {
+const Route = ({ path, component }) => {
   const { currentPath } = useRouter();
 
   if (currentPath !== path) return null;
+  const Component = component;
 
-  return React.createElement(Component);
+  return <Component />;
 };
 
 export default Route;

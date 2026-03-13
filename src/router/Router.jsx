@@ -2,7 +2,13 @@ import { useEffect, useState } from "react";
 import { RouterContext } from "./RouterContext";
 
 const Router = ({ children }) => {
-  const [currentPath, setCurrentPath] = useState(window.location.pathname);
+  const [currentPath, setCurrentPath] = useState(() => {
+    if (window.location.pathname) {
+      window.history.replaceState({}, "", "/routing");
+      return "/routing";
+    }
+    return window.location.pathname;
+  });
 
   useEffect(() => {
     const pathHandler = () => setCurrentPath(window.location.pathname);

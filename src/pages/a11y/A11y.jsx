@@ -8,7 +8,7 @@ import SemanticTagNames from "./components/SemanticTagNames";
 
 const A11y = () => {
   return (
-    <>
+    <main>
       <A11yIntro />
 
       <SemanticTagNames />
@@ -22,7 +22,7 @@ const A11y = () => {
       <AriaAttributes />
 
       <KeyboardAccessibility />
-    </>
+    </main>
   );
 };
 

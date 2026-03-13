@@ -2,7 +2,7 @@ import Layout from "./components/Layout";
 import Router from "./router/Router";
 import Route from "./router/Route";
 import Home from "./pages/Home";
-import Routing from "./pages/Routing";
+import Routing from "./pages/routing/Routing";
 import A11y from "./pages/a11y/A11y";
 import Lifecycle from "./pages/Lifecycle";
 
